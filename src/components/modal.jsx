@@ -1,0 +1,7 @@
+function ModalLoad(){
+
+}
+
+function ModalSearch(){
+    
+}

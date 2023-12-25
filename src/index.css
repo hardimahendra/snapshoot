@@ -12,6 +12,10 @@
   background-color: #242424;
 }
 
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
 
 h1 {
   font-size: 3.2em;
@@ -55,7 +59,6 @@ button:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: #242424;
   padding-top:2rem;
 }
@@ -81,24 +84,37 @@ button:focus-visible {
   color: #fff;
 }
 
-.images-wrapper {
-  display:flex;
-  flex-direction:row;
-  width:80%;
+.wrapper .images-wrapper {
+  columns:3;
+  column-gap: 5px;
   margin:2px auto;
-  height:100%;
+  width:80%;
 }
 
-.images-wrapper img{
-  width:100%;
-  height:100%;
+.wrapper .images-wrapper img{
   object-fit:cover;
-  max-height:500px;
-  max-width:500px;
 }
 
 img:hover{
   cursor:zoom-in;
   transition: all 0.5s;
   transform: scale(1.1);
+}
+.modal-images{
+  columns:3;
+  column-gap:5px;
+  margin:2px auto;
+  height:80%;
+}
+
+.likes{
+  display: flex;
+  flex-direction: row;;
+  justify-content: felx-start;
+  align-items: center;
+  padding:2px;
+}
+.likes .icon{
+  font-size:22px;
+  color:red;
 }
